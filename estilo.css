@@ -61,22 +61,23 @@ body{/*seletor de tag*/
 
 #col1{/*seletor de id*/
     background-color: white; 
-    width: 400px; /*tamanho do fundo*/
+    width: 400px; /*largura*/
     text-align: center; /*centralizando caixa*/
-    padding-top: 10px; 
+    padding-top: 10px; /*espaçamento para dentro*/
     padding-left: 38px;
     padding-right: 38px;
     padding-bottom: 38px;
+    box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.5);
 }
 
 .titulo{ /*seletor de classe*/
     font-size: 32px; /*tamanho da fonte*/
-    margin-top: 14px;
+    margin-top: 14px; /*espaçamento para fora*/
     margin-bottom: 12px;
-    font-weight: bold; /*fonte negrito*/
+    font-weight: bold; /* peso da fonte - negrito*/
 }
 
-.texto{
+.texto{   /* ponto texto é classe*/
     font-size: 18px; /*tamanho da letra do texto*/
     font-weight: bold;
 }
@@ -84,4 +85,63 @@ body{/*seletor de tag*/
 .pedido{
     margin-top: 32px;
     text-align: left; /*alianhamento do texto "esquerda"*/
+}
+
+.rotulo{
+    font-weight: bold;
+    font-size: 16px;
+    display: block;  /*criar um bloco deixando um espaço (lugar do BR)*/
+    margin-bottom: 8px;
+}
+
+.campo-texto{
+    width: 100%;
+    font-size: 16px;
+    color: #434343; /*cor da fonte*/
+    padding: 7px 13px; /*forma resumida*/
+    margin-bottom: 16px;
+    border: 1px solid #ced4da;  /*tamanho da borda e cor*/
+    border-radius: 4px;  /*arredondamento da borda*/
+    box-sizing: border-box;
+}
+
+.botao-reservar{
+    width: 100%;
+    background-color: #FFC107;
+    color: white;
+    line-height: 150%; /*altura da linha do texto que está inserido*/
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border: none; /*tirar a borda*/
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-top: 32px;
+}
+
+#col2{
+    width: 700px;
+    margin-left: 39px;
+}
+
+.oferta{
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+
+.destaque{
+    color: #445EE5;
+}
+
+.texto-oferta{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.tudo{
+    display: flex;
+    align-items: center; /*vertical*/
+    justify-content: center; /*horizontal*/
+    height: 100vh;
 }
